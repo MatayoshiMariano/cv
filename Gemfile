@@ -42,6 +42,8 @@ gem 'loadjs'
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem 'slim-rails'
+
 # Configures Rails app to be 12 factor compliant for Heroku
 gem 'rails_12factor', group: :production
 
@@ -56,6 +58,10 @@ gem 'coveralls', require: false
 gem "codeclimate-test-reporter", group: :test, require: nil
 gem 'simplecov', :require => false, :group => :test
 
+
+gem 'twitter-bootstrap-rails', "2.2.8"
+gem 'bootstrap-addons-rails'
+gem 'inherited_resources'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
