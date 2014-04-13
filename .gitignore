@@ -1,0 +1,23 @@
+ Ignore bundler config.
+/.bundle
+vendor/bundle/
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+.facebook.yml
+.mail.yml
+.mercadopago.yml
+.amazon.yml
+
+coverage/
+coverage/*
+
+.DS_Store
+**/.DS_Store
+
+public/assets/*
