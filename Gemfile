@@ -47,6 +47,8 @@ gem 'unicorn'
 gem 'slim-rails'
 gem 'haml-rails'
 
+gem 'font-awesome-sass'
+
 # Configures Rails app to be 12 factor compliant for Heroku
 gem 'rails_12factor', group: :production
 

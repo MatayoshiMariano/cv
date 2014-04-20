@@ -66,6 +66,12 @@
     -moz-transform: rotateX(0deg) rotateY(0deg);
 }
 
+.front .back {
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;    
+}
+
 .img-border {
   border: 2px solid $red;
 }
@@ -74,4 +80,15 @@
   font-size: medium;
   line-height: 1;
   text-align: center;
+}
+
+.contact-info {
+  padding-left: 0px;
+  li {
+    margin-top: 20px;
+    display: block;
+    span {
+      margin-left: 20px;
+    }
+  }
 }
