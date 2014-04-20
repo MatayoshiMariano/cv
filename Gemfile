@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'loadjs'
 
+gem 'rb-readline'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -43,6 +45,7 @@ gem 'loadjs'
 gem 'unicorn'
 
 gem 'slim-rails'
+gem 'haml-rails'
 
 # Configures Rails app to be 12 factor compliant for Heroku
 gem 'rails_12factor', group: :production
@@ -58,9 +61,6 @@ gem 'coveralls', require: false
 gem "codeclimate-test-reporter", group: :test, require: nil
 gem 'simplecov', :require => false, :group => :test
 
-
-gem 'twitter-bootstrap-rails', "2.2.8"
-gem 'bootstrap-addons-rails'
 gem 'inherited_resources'
 
 # Use Capistrano for deployment

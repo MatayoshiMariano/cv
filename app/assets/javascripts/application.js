@@ -13,5 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require loadjs
+//= require bootstrap.min
+//= require jquery.flip.min
 //= require turbolinks
 //= require_tree .
