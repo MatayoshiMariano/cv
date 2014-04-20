@@ -1,5 +1,15 @@
 $black: #262324;
+$red: #AA1111;
 
 .white{
   color: white;
+}
+
+.container {
+
+  background-color: $black;
+
+  p {
+    font-family: 'Ubuntu';
+  }
 }

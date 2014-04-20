@@ -3,20 +3,9 @@ do_on_load = ->
     controllers:
       statics: ["home"]
   , (controller, action) ->
-    flipBox = $("#flipbox")
-
-    $(".flip").hover (->
-      $(this).find(".card").addClass("flipped")
+    $(".hover").hover (->
+      $(this).addClass("flip")
     ), ->
-      $(this).find(".card").removeClass("flipped")
-
-
-    flipBox.hover (->
-      $(this).flip
-        direction: "tb"
-        content: "this is my new content"
-    ), ->
-      $(this).revertFlip
-
+      $(this).removeClass("flip")
 
 $(document).ready do_on_load

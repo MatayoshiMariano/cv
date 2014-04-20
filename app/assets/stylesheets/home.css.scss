@@ -4,44 +4,74 @@
   background-color: $black;
 }
 
-.flip {
-  -webkit-perspective: 800;
-   width: 400px;
-   height: 200px;
+.panel {
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;  
     position: relative;
-    margin: 50px auto;
+    font-size: .8em;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
 }
-.flip .card.flipped {
-  -webkit-transform: rotatex(-180deg);
-}
-.flip .card {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: 1s;
-}
-.flip .card .face {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-backface-visibility: hidden ;
-  z-index: 2;
-    font-family: Georgia;
-    font-size: 3em;
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.panel .front {
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
     text-align: center;
-    line-height: 200px;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
-.flip .card .front {
-  position: absolute;
-  z-index: 1;
-    background: black;
-    color: white;
-    cursor: pointer;
+.panel.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
 }
-.flip .card .back {
-  -webkit-transform: rotatex(-180deg);
-    background: blue;
-    background: white;
-    color: black;
-    cursor: pointer;
+.panel .back {
+    position: absolute;
+    top: 0;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+ 
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+.panel.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+.img-border {
+  border: 2px solid $red;
+}
+
+.mini-description {
+  font-size: medium;
+  line-height: 1;
+  text-align: center;
 }

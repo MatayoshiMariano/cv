@@ -1,13 +1,12 @@
-
-h3= "MARIANO NICOLAS MATAYOSHI"
 .row
-  .col-xs-4.col-sm-2
-    .flip
-      .card
-        .face.front
-          | Front
-        .face.back
-          | Back
+  .col-xs-6.col-sm-4
+    .hover.panel
+      .front
+        .pad
+          =image_tag asset_url('mariano2.jpeg'), class: 'img img-border img-responsive img-circle', alt: "Responsive image"
+      .back
+        .pad
+          p.mini-description= 'Soy Mariano Matayoshi, hincha de Argentinos Juniors, apasionado por el desarollo, estudiante de ingeniería.'
 
   .col-xs-4.col-sm-2
     p=t('home.contact')
