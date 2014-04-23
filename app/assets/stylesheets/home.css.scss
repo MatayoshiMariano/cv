@@ -4,82 +4,117 @@
   background-color: $black;
 }
 
+.cv-introduction {
+  .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+  .vtop {
+    vertical-align: top;
+    display: inline-block;
+    float: none;
+  }
+  .i-am {
+    text-align: center;
+  }
+  .my-name {
+    font-size: 75px;
+  }
+  .and {
+  }
+  .love-develop {
+    text-align: center;
+  }
+}
+
+.cv-row-contact-info {
+  padding-top: 20px;
+  .cv-col-contact-info {
+    color: $red;
+  }
+}
+
+
 .panel {
-    margin: 0 auto;
-    width: 230px;
-    height: 230px;  
-    position: relative;
-    font-size: .8em;
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
+  margin: 0 auto;
+  width: 230px;
+  height: 230px;
+  position: relative;
+  font-size: x-large;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  box-shadow: none;
 }
 /* -- make sure to declare a default for every property that you want animated -- */
 /* -- general styles, including Y axis rotation -- */
 .panel .front {
-    position: absolute;
-    top: 0;
-    z-index: 900;
-    width: inherit;
-    height: inherit;
-    text-align: center;
-    -webkit-transform: rotateX(0deg) rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    -moz-transform: rotateX(0deg) rotateY(0deg);
-    -moz-transform-style: preserve-3d;
-    -moz-backface-visibility: hidden;
-    /* -- transition is the magic sauce for animation -- */
-    -o-transition: all .8s ease-in-out;
-    -ms-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -webkit-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
-}
+  position: absolute;
+  top: 0;
+  z-index: 900;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -o-transition: all .8s ease-in-out;
+  -ms-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  }
 .panel.flip .front {
-    z-index: 900;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 .panel .back {
-    position: absolute;
-    top: 0;
-    z-index: 800;
-    width: inherit;
-    height: inherit;
-    -webkit-transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
- 
-    -moz-transform: rotateY(-180deg);
-    -moz-transform-style: preserve-3d;
-    -moz-backface-visibility: hidden;
-    /* -- transition is the magic sauce for animation -- */
-    -o-transition: all .8s ease-in-out;
-    -ms-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -webkit-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
+  position: absolute;
+  top: 0px;
+  z-index: 800;
+  width: inherit;
+  height: inherit;
+  -webkit-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateY(-180deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -o-transition: all .8s ease-in-out;
+  -ms-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 .panel.flip .back {
-    z-index: 1000;
-    -webkit-transform: rotateX(0deg) rotateY(0deg);
-    -moz-transform: rotateX(0deg) rotateY(0deg);
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
 }
 
 .front .back {
-   -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;    
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .img-border {
   border: 2px solid $red;
 }
 
-.mini-description {
-  font-size: medium;
-  line-height: 1;
-  text-align: center;
+.red-list-items {
+  color: $red;
+  .mini-description {
+    line-height: 1;
+    text-align: center;
+  }
 }
 
 .contact-info {

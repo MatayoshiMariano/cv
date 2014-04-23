@@ -4,8 +4,11 @@ es:
     education: Estudios
     work_xp: Experiencia laboral
   home:
+    welcome: BIENVENIDO
     contact: "CONTACTO"
     mini_descrp1: 'Mariano Matayoshi, tambien conocido como "El chino" o "Ninja".'
     mini_descrp2: 'Estudiante de Ingeniería en Informática de la U.B.A.'
     mini_descrp3: 'Hincha de Argentinos Juniors'
     mini_descrp4: 'Desarrollador Web'
+    mini_descrp5: 'Ayudante segundo en Organización de Computadoras'
+    mini_descrp6: 'Me encanta transmitir mis conocimientos para ayudar a otros'

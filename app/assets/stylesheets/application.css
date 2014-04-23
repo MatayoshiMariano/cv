@@ -15,3 +15,31 @@
  *= require_self
  *= require_tree .
  */
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('glyphicons-halflings-regular.eot');
+  src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+       url('glyphicons-halflings-regular.woff') format('woff'),
+       url('glyphicons-halflings-regular.ttf') format('truetype'),
+       url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'Cartoon Blocks';
+  src: url('cartoon-blocks.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'remachine';
+  src: url('RemachineScript_Personal_Use.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: remachine;
+  font-size: x-large;
+}

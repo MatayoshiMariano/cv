@@ -1,5 +1,6 @@
-.row
-  .col-xs-6.col-sm-4
+.row.cv-introduction
+  .col-xs-5.col-sm-3.col-sm-offset-1.vcenter
+    h3.text-center=t('home.welcome')
     .hover.panel
       .front
         .pad
@@ -7,13 +8,21 @@
       .back
         .pad
           ul.red-list-items
-            li.mini-description= t('home.mini_descrp1')
             li.mini-description= t('home.mini_descrp2')
             li.mini-description= t('home.mini_descrp3')
             li.mini-description= t('home.mini_descrp4')
+            li.mini-description= t('home.mini_descrp5')
+            li.mini-description= t('home.mini_descrp6')
+  .col-xs-5.col-sm-3.and.vcenter.text-right
+  .col-xs-1.col-sm-1.and.vcenter.text-center
+  .col-xs-5.col-sm-3.love-develop.vcenter.text-center
+  .clearfix.visible-xs
+.triangle.white-triangle.absolute
+.row.cv-row-contact-info.black-container
+  .col-xs-6.col-sm-4
 
   .col-xs-6.col-sm-4.text-center
-    h3.text-left=t('home.contact')
+    h3.text-left.cv-col-contact-info=t('home.contact')
     ul.text-left.contact-info
       li.fa.fa-envelope.fa-lg
         span= 'matayoshi.mariano@gmail.com'

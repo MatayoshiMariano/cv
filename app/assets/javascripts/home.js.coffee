@@ -1,11 +1,16 @@
-do_on_load = ->
+on_load = ->
   load
     controllers:
       statics: ["home"]
   , (controller, action) ->
+
+    winHeight = $(window).height();
+    navBar = $('.cv-navbar')
+    $('.cv-row-contact-info').height(winHeight - navBar.outerHeight(true));
     $(".hover").hover (->
       $(this).addClass("flip")
     ), ->
       $(this).removeClass("flip")
 
-$(document).ready do_on_load
+$(document).ready on_load
+$(window).bind "page:change", on_load
