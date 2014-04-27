@@ -14,6 +14,10 @@
 //= require jquery_ujs
 //= require loadjs
 //= require bootstrap.min
+//= require two
+//= require modernizr-2.6.2.min
+//= require polyfills
+//= require classie
 //= require jquery.flip.min
-//= require turbolinks
 //= require_tree .
+

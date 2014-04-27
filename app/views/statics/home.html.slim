@@ -1,22 +1,38 @@
 .row.cv-introduction
-  .col-xs-5.col-sm-3.col-sm-offset-1.vcenter
-    h3.text-center=t('home.welcome')
-    .hover.panel
-      .front
-        .pad
-          =image_tag asset_url('mariano2.jpeg'), class: 'img img-border img-responsive img-circle', alt: "Responsive image"
-      .back
-        .pad
-          ul.red-list-items
-            li.mini-description= t('home.mini_descrp2')
-            li.mini-description= t('home.mini_descrp3')
-            li.mini-description= t('home.mini_descrp4')
-            li.mini-description= t('home.mini_descrp5')
-            li.mini-description= t('home.mini_descrp6')
-  .col-xs-5.col-sm-3.and.vcenter.text-right
-  .col-xs-1.col-sm-1.and.vcenter.text-center
-  .col-xs-5.col-sm-3.love-develop.vcenter.text-center
-  .clearfix.visible-xs
+  .col-xs-6.col-sm-6.vcenter
+    .cv-image
+      button#cn-button.cn-button
+      #cn-wrapper.cn-wrapper
+        ul
+          li
+            a href="#" 
+              span= 'About me'
+          li
+            a href="#" 
+              span.fa.fa-headphones
+          li
+            a href="#" 
+              span.fa.fa-home
+          li
+            a href="#" 
+              span.fa.fa-facebook
+          li
+            a href="#" 
+              span.fa.fa-icon-envelope
+      #cn-overlay.cn-overlay
+    / h3.text-center=t('home.welcome')
+    / .hover.panel
+    /   .front
+    /     .pad
+    /       =image_tag asset_url('mariano2.jpeg'), class: 'img img-border img-responsive img-circle', alt: "Responsive image"
+    /   .back
+    /     .pad
+    /       ul.red-list-items
+    /         li.mini-description= t('home.mini_descrp2')
+    /         li.mini-description= t('home.mini_descrp3')
+    /         li.mini-description= t('home.mini_descrp4')
+    /         li.mini-description= t('home.mini_descrp5')
+    /         li.mini-description= t('home.mini_descrp6')
 .triangle.white-triangle.absolute
 .row.cv-row-contact-info.black-container
   .col-xs-6.col-sm-4

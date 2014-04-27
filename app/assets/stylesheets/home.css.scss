@@ -5,10 +5,16 @@
 }
 
 .cv-introduction {
+  text-align: -webkit-center;
   .vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
+    .cv-image {
+      position: relative;
+      margin-bottom: 3em;
+      height: 15em;
+    }
   }
   .vtop {
     vertical-align: top;
