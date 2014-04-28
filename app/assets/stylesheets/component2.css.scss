@@ -12,10 +12,6 @@ body {
 	height: 100%;
 }
 
-body {
-	background: #52be7f;
-	color: #fff;
-}
 
 .component {
 	position: relative;
@@ -40,9 +36,9 @@ body {
 }
 
 .cn-button {
-	background-image: asset-url('mariano2.jpeg');
+/* 	background-image: asset-url('mariano2.jpeg');
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;	 */
   outline-color: transparent;
   outline-style: none;
   position: absolute;
@@ -59,7 +55,7 @@ body {
 	color: #52be7f;
 	text-align: center;
 	font-weight: 700;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	text-transform: uppercase;
 	cursor: pointer;
 	-webkit-backface-visibility: hidden;

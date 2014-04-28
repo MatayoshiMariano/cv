@@ -8,8 +8,8 @@ on_load = ->
     navBar = $('.cv-navbar')
     $('.cv-row-contact-info').height(winHeight - navBar.outerHeight(true));
     $('.cv-introduction').height(winHeight - navBar.outerHeight(true));
-    $(".hover").hover (->
-      $(this).addClass("flip")
+    $(".side.front").hover (->
+      $(this).css("flip")
     ), ->
       $(this).removeClass("flip")
 
@@ -20,12 +20,14 @@ on_load = ->
 
     $('#cn-button').click ->
       unless open
-        @innerHTML = "Close"
         classie.add wrapper, "opened-nav"
       else
-        @innerHTML = "Menu"
         classie.remove wrapper, "opened-nav"
       open = not open
+      return
+    $('#cn-button').focusout ->
+      classie.remove wrapper, "opened-nav"
+      open = false
       return
 
 $(document).ready on_load

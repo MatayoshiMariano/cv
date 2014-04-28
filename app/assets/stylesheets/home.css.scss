@@ -4,6 +4,11 @@
   background-color: $black;
 }
 
+.row {
+  width: 100%;
+  margin: auto;
+}
+
 .cv-introduction {
   text-align: -webkit-center;
   .vcenter {
@@ -34,6 +39,84 @@
   }
 }
 
+.initial-img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.cn-button {
+  .card {
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 100%;    
+    border-radius: 50%;
+  }
+  .card:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  .front {
+   background-image: asset-url('mariano2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;     
+  }
+
+  .card .side {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+
+  }
+  .card .back {
+    background-color: transparent;
+    border: 3px dotted $red;
+    -webkit-box-shadow: inset 0 0 25px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 0 25px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.1);
+    color: #404853;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 150px;
+    text-align: center;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    border-radius: 50%;
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+.btn-6d {
+  transition-property: border;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.btn-6d:hover {
+  background: transparent;
+  border: 2px dashed $yellow;
+}
+
 .cv-row-contact-info {
   padding-top: 20px;
   .cv-col-contact-info {
@@ -41,75 +124,6 @@
   }
 }
 
-
-.panel {
-  margin: 0 auto;
-  width: 230px;
-  height: 230px;
-  position: relative;
-  font-size: x-large;
-  -webkit-perspective: 600px;
-  -moz-perspective: 600px;
-  box-shadow: none;
-}
-/* -- make sure to declare a default for every property that you want animated -- */
-/* -- general styles, including Y axis rotation -- */
-.panel .front {
-  position: absolute;
-  top: 0;
-  z-index: 900;
-  width: inherit;
-  height: inherit;
-  text-align: center;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform-style: preserve-3d;
-  -moz-backface-visibility: hidden;
-  /* -- transition is the magic sauce for animation -- */
-  -o-transition: all .8s ease-in-out;
-  -ms-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -webkit-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-  }
-.panel.flip .front {
-  z-index: 900;
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-}
-.panel .back {
-  position: absolute;
-  top: 0px;
-  z-index: 800;
-  width: inherit;
-  height: inherit;
-  -webkit-transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-
-  -moz-transform: rotateY(-180deg);
-  -moz-transform-style: preserve-3d;
-  -moz-backface-visibility: hidden;
-  /* -- transition is the magic sauce for animation -- */
-  -o-transition: all .8s ease-in-out;
-  -ms-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -webkit-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-}
-.panel.flip .back {
-  z-index: 1000;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-}
-
-.front .back {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .img-border {
   border: 2px solid $red;
