@@ -16,6 +16,8 @@
 //= require bootstrap.min
 //= require two
 //= require modernizr-2.6.2.min
+//= require jquery.lettering-0.6.1.min
+//= require jquery.textillate
 //= require polyfills
 //= require classie
 //= require jquery.flip.min
