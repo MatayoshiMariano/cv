@@ -11,7 +11,10 @@ on_load = ->
           effect: 'fadeIn',
         }
         callback: ->
-          $(this).css('display', 'flex')
+          $('#page-effect').css('display', 'flex')
+          $('#page-effect').css('color', 'grey')
+          #$('#page-effect').css('opacity', '0.3')
+          $('#page-effect').fadeOut(2000)
           $('#page').fadeIn(2000)
 
       return
