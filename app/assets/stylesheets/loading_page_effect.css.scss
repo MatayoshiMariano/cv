@@ -5,7 +5,18 @@
   left: 18%;
   font-family: CuttyFruty;
   z-index: 2;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;  
 }
 .not-display {
   display: none;
+}
+
+.signature-transition{
+  top: 2.5% !important;
+  left: 1% !important;
+  font-size: 2em !important;
+  color: white !important;
 }

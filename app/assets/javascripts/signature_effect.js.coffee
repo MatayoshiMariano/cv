@@ -13,8 +13,7 @@ on_load = ->
         callback: ->
           $('#page-effect').css('display', 'flex')
           $('#page-effect').css('color', 'grey')
-          #$('#page-effect').css('opacity', '0.3')
-          $('#page-effect').fadeOut(2000)
+          $('#page-effect').addClass('signature-transition')
           $('#page').fadeIn(2000)
 
       return

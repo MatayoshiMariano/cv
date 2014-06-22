@@ -11,16 +11,22 @@
 
 .cv-introduction {
   text-align: -webkit-center;
-  top: 27%;
+  position: relative;
+  .web-developer {
+    border: 1px dotted orange;
+    border-radius: 100%;
+    font-family: arial;
+    display: none !important;
+  }
   .vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
-    .cv-image {
-      position: relative;
-      margin-bottom: 3em;
-      height: 15em;
-    }
+  }
+  .cv-image {
+    position: absolute;
+    top: 44%;
+    left: 25%;
   }
   .vtop {
     vertical-align: top;

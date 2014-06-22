@@ -25,9 +25,14 @@ on_load = ->
         classie.remove wrapper, "opened-nav"
       open = not open
       return
-    $('#cn-button').focusout ->
+
+    $('#cn-wrapper').click ->
       classie.remove wrapper, "opened-nav"
       open = false
       return
+
+    $('#about-me').click ->
+      debugger
+      $('.web-developer').fadeIn(2000);
 
 $(document).ready on_load
