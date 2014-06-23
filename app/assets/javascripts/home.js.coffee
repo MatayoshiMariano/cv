@@ -4,10 +4,6 @@ on_load = ->
       statics: ["home"]
   , (controller, action) ->
 
-    winHeight = $(window).height();
-    navBar = $('.cv-navbar')
-    $('.cv-row-contact-info').height(winHeight - navBar.outerHeight(true));
-    $('.cv-introduction').height(winHeight - navBar.outerHeight(true));
     $(".side.front").hover (->
       $(this).css("flip")
     ), ->
@@ -31,8 +27,33 @@ on_load = ->
       open = false
       return
 
-    $('#about-me').click ->
-      debugger
-      $('.web-developer').fadeIn(2000);
+    infoTransition = (id, classDiv) ->
+      $(id).click ->
+        top = Math.round(Math.random() * 70 + 10);
+        left = Math.round(Math.random() * 70 + 10);
+        position = {'top': top.toString() + "%", 'left': left.toString() + "%"};
+        $(classDiv).css(position)
+        $(classDiv).fadeIn(2000, 'swing', ->
+          if top > 50
+            topFinal = top - Math.round(Math.random() * 40 + 10);
+          else
+            topFinal = top + Math.round(Math.random() * 40 + 10);
+          if left > 50
+            leftFinal = top - Math.round(Math.random() * 40 + 10);
+          else
+            leftFinal = top + Math.round(Math.random() * 40 + 10);
+          position = {'top': topFinal.toString() + "%", 'left': leftFinal.toString() + "%"};
+          $(classDiv).css(position);
+          $(classDiv).fadeOut(3000, ->
+            $(classDiv).removeClass('info-transition')
+          );
+        );
+
+    infoTransition('#web-developer', '.web-developer')
+    infoTransition('#aaaj-fan', '.aaaj-fan')
+    infoTransition('#about-me', '.about-me')
+    infoTransition('#student', '.student')
+    infoTransition('#teacher', '.teacher')
+
 
 $(document).ready on_load

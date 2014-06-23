@@ -165,9 +165,9 @@ body {
 
 .csstransforms .cn-wrapper li a span {
 	position: relative;
-	top: 1.8em;
 	display: block;
-	font-size: .5em;
+	font-size: 1em;
+	top: 0.8em;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -186,49 +186,42 @@ body {
 	transition: all .3s ease .3s;
 }
 
-.csstransforms .opened-nav li:first-child {
-	-webkit-transform: rotate(-20deg) skew(60deg);
-	-moz-transform: rotate(-20deg) skew(60deg);
-	-ms-transform: rotate(-20deg) skew(60deg);
-	transform: rotate(-20deg) skew(60deg);
-}
-
-.csstransforms .opened-nav li:nth-child(2) {
+.csstransforms .opened-nav li:nth-child(1) {
 	-webkit-transform: rotate(12deg) skew(60deg);
 	-moz-transform: rotate(12deg) skew(60deg);
 	-ms-transform: rotate(12deg) skew(60deg);
 	transform: rotate(12deg) skew(60deg);
 }
 
-.csstransforms .opened-nav  li:nth-child(3) {
+.csstransforms .opened-nav  li:nth-child(2) {
 	-webkit-transform: rotate(44deg) skew(60deg);
 	-moz-transform: rotate(44deg) skew(60deg);
 	-ms-transform: rotate(44deg) skew(60deg);
 	transform: rotate(44deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(4) {
+.csstransforms .opened-nav li:nth-child(3) {
 	-webkit-transform: rotate(76deg) skew(60deg);
 	-moz-transform: rotate(76deg) skew(60deg);
 	-ms-transform: rotate(76deg) skew(60deg);
 	transform: rotate(76deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(5) {
+.csstransforms .opened-nav li:nth-child(4) {
 	-webkit-transform: rotate(108deg) skew(60deg);
 	-moz-transform: rotate(108deg) skew(60deg);
 	-ms-transform: rotate(108deg) skew(60deg);
 	transform: rotate(108deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(6) {
+.csstransforms .opened-nav li:nth-child(5) {
 	-webkit-transform: rotate(140deg) skew(60deg);
 	-moz-transform: rotate(140deg) skew(60deg);
 	-ms-transform: rotate(140deg) skew(60deg);
 	transform: rotate(140deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(7) {
+.csstransforms .opened-nav li:nth-child(6) {
 	-webkit-transform: rotate(172deg) skew(60deg);
 	-moz-transform: rotate(172deg) skew(60deg);
 	-ms-transform: rotate(172deg) skew(60deg);

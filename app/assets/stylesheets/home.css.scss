@@ -9,15 +9,66 @@
   margin: auto;
 }
 
+.information-about-me {
+  position: relative;
+  h1 {
+    text-align: center;
+    margin: 5%;
+  }
+  .col-xs-3 {
+    position: fixed;
+    border: 4px dotted orange;
+    border-radius: 100%;
+    font-family: arial;
+    border-style: double;
+    font-family: remachine;
+    display: none;
+  }
+  .col-xs-4 {
+    position: fixed;
+    border: 4px dotted orange;
+    border-radius: 100%;
+    font-family: arial;
+    border-style: double;
+    font-family: remachine;
+    display: none;
+  }
+  .info {
+    -webkit-transition: top 2s, left 5s, bottom 3s, right 3s;
+    -moz-transition: top 2s, left 5s, bottom 3s, right 3s;
+    -o-transition: top 2s, left 5s, bottom 3s, right 3s;
+    transition: top 2s, left 5s, bottom 3s, right 3s;
+  }
+  .web-developer {
+    top: 20%;
+    left: 5%;
+  }
+  .student {
+    top: 70%;
+    left: 5%;
+  }
+  .aaaj-fan {
+    top: 40%;
+    left: 5%;
+  }
+  .teacher {
+    top: 30%;
+    left: 5%;
+  }
+  .about-me {
+    top: 30%;
+    left: 65%;
+  }
+}
+
+.info-transition {
+  //top: 80% !important;
+  //left: 70% !important;
+}
+
 .cv-introduction {
   text-align: -webkit-center;
   position: relative;
-  .web-developer {
-    border: 1px dotted orange;
-    border-radius: 100%;
-    font-family: arial;
-    display: none !important;
-  }
   .vcenter {
     display: inline-block;
     vertical-align: middle;
@@ -65,7 +116,7 @@
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    width: 100%;    
+    width: 100%;
     border-radius: 50%;
   }
   .card:hover {
@@ -79,7 +130,7 @@
   .front {
    background-image: asset-url('mariano2.jpeg');
     background-size: cover;
-    background-repeat: no-repeat;     
+    background-repeat: no-repeat;
   }
 
   .card .side {

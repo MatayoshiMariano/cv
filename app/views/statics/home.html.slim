@@ -1,29 +1,39 @@
+.row.information-about-me
+  .col-xs-3.col-sm-3.web-developer.info
+    h1= t('home.web_developer')
+  .col-xs-3.col-sm-3.aaaj-fan.info
+    h1= t('home.aaaj_fan')
+  .col-xs-3.col-sm-3.student.info
+    h1= t('home.student')
+  .col-xs-3.col-sm-3.teacher.info
+    h1= t('home.teacher')
+  .col-xs-4.col-sm-4.about-me.info
+    h1= t('home.about_me')
+
 .row.cv-introduction
-  .col-xs-3.col-sm-3.vcenter.web-developer
-    h1= 'Desarrollador Web'
   .col-xs-6.col-sm-6.vcenter.cv-image
     a#cn-button.cn-button
       .card
         .side.front
         .side.back
-          p= 'Menu'
+          p= 'Info'
     #cn-wrapper.cn-wrapper
       ul
         li
           a#about-me href="#"
-            span= 'About me'
+            span.fa.fa-info
         li
-          a href="#2"
-            span.fa.fa-headphones
+          a#student href="#"
+            span.fa.fa-graduation-cap
         li
-          a href="#3"
-            span.fa.fa-home
+          a#teacher href="#"
+            span.fa.fa-university
         li
-          a href="#4"
-            span.fa.fa-facebook
+          a#web-developer href="#"
+            span.fa.fa-code
         li
-          a href="#5"
-            span.fa.fa-icon-envelope
+          a#aaaj-fan href="#"
+            span.fa.fa-circle-thin
     #cn-overlay.cn-overlay
     / h3.text-center=t('home.welcome')
     / .hover.panel
@@ -38,17 +48,17 @@
     /         li.mini-description= t('home.mini_descrp4')
     /         li.mini-description= t('home.mini_descrp5')
     /         li.mini-description= t('home.mini_descrp6')
-.triangle.white-triangle.absolute
-.row.cv-row-contact-info.black-container
-  .col-xs-6.col-sm-4
+/ .triangle.white-triangle.absolute
+/ .row.cv-row-contact-info.black-container
+/   .col-xs-6.col-sm-4
 
-  .col-xs-6.col-sm-4.text-center
-    h3.text-left.cv-col-contact-info=t('home.contact')
-    ul.text-left.contact-info
-      li.fa.fa-envelope.fa-lg
-        span= 'matayoshi.mariano@gmail.com'
-      li.fa.fa-linkedin.fa-lg
-        span=link_to 'LinkedIn', 'http://lnkd.in/Gfmski', target: '_blank'
-      li.fa.fa-skype.fa-lg
-        span= 'marianomatayoshi'
-  .clearfix.visible-xs
+/   .col-xs-6.col-sm-4.text-center
+/     h3.text-left.cv-col-contact-info=t('home.contact')
+/     ul.text-left.contact-info
+/       li.fa.fa-envelope.fa-lg
+/         span= 'matayoshi.mariano@gmail.com'
+/       li.fa.fa-linkedin.fa-lg
+/         span=link_to 'LinkedIn', 'http://lnkd.in/Gfmski', target: '_blank'
+/       li.fa.fa-skype.fa-lg
+/         span= 'marianomatayoshi'
+/   .clearfix.visible-xs
