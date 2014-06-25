@@ -17,6 +17,8 @@ on_load = ->
           winHeight = $(window).height();
           navBar = $('.cv-navbar')
           $('.cv-introduction').height(winHeight - navBar.outerHeight(true));
+          if navBar.outerHeight(true) == 0
+            $('.cv-introduction').height(winHeight - 60)
           $('#page').fadeIn(2000, ->
             winHeight = $(window).height();
             navBar = $('.cv-navbar')
