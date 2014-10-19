@@ -79,4 +79,5 @@ group :test, :development, :debugging do
   # gem 'fuubar'
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
   gem "launchy", "~> 2.1.2"
+  gem 'web-console', '2.0.0.beta3'
 end
