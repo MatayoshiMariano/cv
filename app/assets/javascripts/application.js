@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require loadjs
 //= require bootstrap.min
 //= require two
@@ -23,3 +24,12 @@
 //= require jquery.flip.min
 //= require_tree .
 
+
+$(function() {
+  $(document).foundation({
+    equalizer : {
+      // Specify if Equalizer should make elements equal height once they become stacked.
+      equalize_on_stack: true
+    }
+  });
+});

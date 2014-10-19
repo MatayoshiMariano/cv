@@ -11,9 +11,10 @@
  * file per style scope.
  *
  *= require bootstrap.min
- *= require component2
  *= require font-awesome
+ *= require foundation
  *= require animate.min
  *= require_self
+ *= require foundation_and_overrides
  *= require_tree .
  */

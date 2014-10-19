@@ -1,13 +1,12 @@
 doctype html
-html
+html lang="en"
   head
-    title Medical System
-    = stylesheet_link_tag    'application', media: 'all'
-    = javascript_include_tag 'application'
+    title Mariano Matayoshi | Desarrollador Web
+    meta charset="utf-8" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    title= content_for?(:title) ? yield(:title) : "foundation-rails"
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag "application"
     = csrf_meta_tags
-  body data-action=controller.action_name data-controller=controller.controller_path 
-    = render '/statics/signature'
-    #page.not-display
-      = render '/layouts/header'
-      = yield
-
+  body
+    = yield
