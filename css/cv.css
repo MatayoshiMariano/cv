@@ -1,0 +1,113 @@
+body {
+  background-color: #F1F2F7
+}
+
+.roboto {
+  font-family: Roboto !important;
+}
+
+.social-media li > a {
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.social-media > li > a:hover {
+  border-bottom: none;
+  background-color: transparent !important;
+}
+
+.social-media > li.link-to-ext {
+  margin: 5px !important;
+}
+
+.social-media > li > a > i {
+  background-color: #FFFFFF;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 1.5em;
+  border-bottom: 2px solid #CCCCCC;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  -o-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s;
+}
+
+.social-media > li > a > i:hover {
+  color: white;
+  font-size: 1.8rem;
+}
+
+
+.social-media > li:nth-child(1) > a > i:hover {
+  background-color: #007BB6;
+}
+
+.social-media > li:nth-child(2) > a > i:hover {
+  background-color: #333;
+}
+
+.social-media > li:nth-child(3) > a > i:hover {
+  background-color: #00AFF0;
+}
+
+.fa-linkedin {
+  background-color: #007BB6;
+  color:  #007BB6;
+}
+
+.fa-linkedin:hover {
+  border-bottom: 2px solid #003B57 !important;
+}
+
+.fa-github {
+  background-color: #333;
+  color:  #333;
+}
+
+.fa-github:hover {
+  border-bottom: 2px solid #000 !important;
+}
+
+.fa-skype {
+  background-color: #00AFF0;
+  color:  #00AFF0;
+}
+
+.social-media > li:nth-child(3) > a > span {
+  color:  #00AFF0;
+}
+
+.social-media > li > a > span:hover {
+  border-bottom: 2px solid #007CA9 !important;
+}
+
+.fa-plus {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+ /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+  .social-media > li > a {
+    background-color: transparent !important;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .social-media > li > a {
+    background-color: transparent !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+  }
+}
+
+
+#skype-dropdown {
+  width: 10rem;
+}

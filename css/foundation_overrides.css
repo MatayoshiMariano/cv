@@ -1,0 +1,61 @@
+.title-area h1 {
+  color: black !important;
+  font-family: Satisfy;
+  font-size: 1.5rem !important;
+}
+
+.title-area li img, .title-area li h1 {
+  display: inline-block;
+}
+
+.title-area #navbar-img {
+  border-radius: 100%;
+  width: 3rem;
+}
+
+.top-bar {
+  /*line-height: 0 !important;*/
+  /*height: 2rem !important;*/
+}
+
+.top-bar.expanded .title-area, .contain-to-grid.sticky, nav {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.top-bar-section ul li {
+  background-color: transparent;
+  margin: 0px 0.2rem;
+}
+
+.navbar-link-active {
+  background: #44CCAA !important;
+  color: #FFFFFF !important;
+  border-bottom: 1px solid #2FAE8E !important;
+}
+
+.navbar-link {
+  background: #FFFFFF !important;
+  color: #999999 !important;
+  margin: 0;
+  padding: 8px 19px 5px 19px !important;
+  border: 0;
+  border-bottom: 2px solid #CCCCCC !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  -o-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  text-decoration: none;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s;
+}
+
+.navbar-link:hover, .navbar-link:focus {
+  border-bottom: 2px solid #2A9A7E !important;
+  /*text-decoration: underline;*/
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+  box-shadow: 0 0px 0 1px black, 0 7px 0 1px black, 0 14px 0 1px black;
+}
